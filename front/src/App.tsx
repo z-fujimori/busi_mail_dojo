@@ -1,16 +1,28 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './features/home/Home'
+import Mailedit from './features/mailedit/Mailedit'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1 className='text-3xl font-bold text-[#1a1a2e] text-center'>Vite + React</h1>
-      <h3 className='text-blue-500'>Vite + React</h3>
-    </>
+    <Router>
+      <div className="h-[94vh] flex flex-col">
+        <header className="">
+          <h1 className="text-3xl font-bold text-[#1a1a2e] text-center">
+            ビジネスメール道場
+          </h1>
+        </header>
+        <main className="flex-1 border-4 border-[#1a1a2e] m-4 overflow-hidden">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/mailedit" element={<Mailedit />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   )
 }
 
