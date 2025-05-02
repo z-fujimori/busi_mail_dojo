@@ -15,7 +15,7 @@ const Home = () => {
         </button>
       </div>
       <div className="flex justify-end p-4 overflow-hidden">
-        <img src={logo} alt="logo" className="h-12" />
+        <img src={logo} alt="logo" className="h-96" />
       </div>
     </div>
   )

@@ -11,9 +11,11 @@ function App() {
     <Router>
       <div className="h-[94vh] flex flex-col">
         <header className="">
-          <h1 className="text-3xl font-bold text-[#1a1a2e] text-center">
-            ビジネスメール道場
-          </h1>
+          <a href="/">
+            <h1 className="text-3xl font-bold text-[#1a1a2e] text-center">
+              ビジネスメール道場
+            </h1>
+          </a>
         </header>
         <main className="flex-1 border-4 border-[#1a1a2e] m-4 overflow-hidden">
           <Routes>
