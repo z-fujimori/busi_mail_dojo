@@ -19,9 +19,6 @@ const EditBody = (prpps:{
                         placeholder="本文を入力"
                     />
                 </div>
-                {/* <div className='text-red-800 text-sm col-span-1'>
-                    {errors.mailBody && <span>※必須</span>}
-                </div> */}
             </div>
         </div>
     )

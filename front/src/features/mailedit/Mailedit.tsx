@@ -31,7 +31,7 @@ const Mailedit = () => {
     return (
         <div>
             <Question question={question} />
-            <EditForm />
+            <EditForm questionId={question?.questionId} />
         </div>
     )
 }

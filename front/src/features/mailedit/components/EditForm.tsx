@@ -5,13 +5,21 @@ import { MdSend } from "react-icons/md";
 import { useForm } from 'react-hook-form'
 import UserAnser from '../types/userAnser';
 
-const EditForm = () => {
+const EditForm = (props: {
+    questionId?: number
+}) => {
 
 	const {
 		register, handleSubmit, formState: {errors}
 	} = useForm<UserAnser>()
 
 	const onSubmit = async (data: UserAnser) => {
+		// data.questionId = props.questionId!;
+		// const finalData = {
+		// 	...data,
+		// 	questionId: props.questionId!,
+		// }
+		// console.log(finalData);
 		const res = await fetch('http://localhost:3000/answer', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
@@ -19,12 +27,15 @@ const EditForm = () => {
 		})
 
 		const result = await res.json()
-		alert(JSON.stringify(result, null, 2))
+		console.log(result)
+		alert(JSON.stringify(result, null, 2))  // JSONに変換して整形したものを出力
 	}
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
 			<div id="2" className="h-1/2 p-4">
+
+			<input type="hidden" value={0} {...register('questionId')} />
 				
 				<EditTitle register={register} errors={errors} />
 
