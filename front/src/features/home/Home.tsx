@@ -9,9 +9,9 @@ const Home = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col items-center justify-center my-36">
       {/* メインコンテンツ */}
-      <div className="flex-1 flex flex-col items-center justify-center space-y-8">
+      <div className="flex flex-col items-center justify-center space-y-8">
         <div className="text-center space-y-4">
           <h2 className="text-2xl font-bold text-[#1a1a2e]">
             達人を目指そう

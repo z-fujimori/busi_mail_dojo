@@ -3,5 +3,5 @@ export type ReturnText = {
     positivePoint: string,
     challengePoint: string,
     summary: string,
-    userText: string,
+    userText: string
 }
