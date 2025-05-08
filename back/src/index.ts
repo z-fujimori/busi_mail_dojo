@@ -7,7 +7,7 @@ import { answerRoute } from './routes/answer.js'
 const app = new Hono()
 
 app.use('*', cors({
-  origin: 'https://busi-mail-dojo.vercel.app/',
+  origin: 'https://busi-mail-dojo.vercel.app',
   allowMethods: ['GET', 'POST', 'OPTIONS'],
   allowHeaders: ['Content-Type'],
 }))
