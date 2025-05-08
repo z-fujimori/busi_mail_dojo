@@ -1,5 +1,5 @@
 type Question = {
-    questionId: number;
+    id: number;
     title: string;
     content: string;
     info: string;

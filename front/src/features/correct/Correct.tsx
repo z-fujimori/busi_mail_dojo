@@ -2,7 +2,6 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import { ReturnText } from './types/returnText';
 import Comparison from './components/Comparison';
-import { MdSend } from 'react-icons/md';
 import NextButton from './components/NextButton';
 import PointComment from './components/PointComment';
 import Summary from './components/ Summary';

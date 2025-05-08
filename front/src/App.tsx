@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './features/home/Home'
 import Mailedit from './features/mailedit/Mailedit'
@@ -6,7 +5,6 @@ import './App.css'
 import Correct from './features/correct/Correct'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Router>
@@ -18,7 +16,7 @@ function App() {
             </h1>
           </a>
         </header>
-        <main className="flex-1 border-4 border-gray-400 m-4 max-w-[928px]">
+        <main className="flex-1 border-4 border-gray-400 m-4 lg:w-[912px] w-[345px]">
           <Routes >
             <Route path="/" element={<Home />} />
             <Route path="/mailedit" element={<Mailedit />} />

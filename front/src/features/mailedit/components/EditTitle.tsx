@@ -11,7 +11,7 @@ const EditTitle = (prpps:{
 
     return (
         <div className="grid grid-cols-12 gap-2 p-1">
-            <div className="col-span-2 text-gray-600">件名：</div>
+            <div className="col-span-2 text-gray-600 text-sm lg:text-lg">件名：</div>
             <div className="col-span-9">
                 <input 
                     {...register('mailTitle', {required: true})}

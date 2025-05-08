@@ -3,8 +3,9 @@ import sample from '../resources/sample.json' assert { type: "json" }
 export const questionRoute = new Hono()
 
 questionRoute.get('/', (c) => {
+    const randomInt = Math.floor(Math.random() * 51);
     const json_data = sample.data;
-    const question = json_data[0];
+    const question = json_data[randomInt];
     return c.json({
         id: question.id,
         title: question.title,

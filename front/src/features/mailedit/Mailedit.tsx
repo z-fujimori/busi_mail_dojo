@@ -28,10 +28,12 @@ const Mailedit = () => {
         fetchQuestion();
     }, []);
 
+    console.log("調子どう？", question)
+
     return (
         <div>
             <Question question={question} />
-            <EditForm questionId={question?.questionId} />
+            <EditForm questionId={question?.id} />
         </div>
     )
 }
