@@ -13,6 +13,8 @@ const EditForm = (props: {
 	const [error, setError] = useState<string>('');
 	const [isLoad, setIsLoad] = useState(false);
 
+	console.log(props.questionId)
+
 	const {
 		register, handleSubmit, formState: {errors}
 	} = useForm<UserAnser>()
