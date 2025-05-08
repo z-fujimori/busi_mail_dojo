@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import sample from '../resources/sample.json' assert { type: "json" }
+import sample from '../resources/sample.json' with { type: "json" }
 export const questionRoute = new Hono()
 
 questionRoute.get('/', (c) => {

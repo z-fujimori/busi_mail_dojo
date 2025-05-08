@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import sample from '../resources/sample.json' assert { type: "json" }
+import sample from '../resources/sample.json' with { type: "json" }
 import userAnswer from '../types/userAnser.js'
 import { config } from 'dotenv'
 import test from 'node:test'
