@@ -26,7 +26,7 @@ const EditForm = (props: {
 		}
 		console.log("送信データ", data)
 		try {
-			const res = await fetch('http://localhost:3000/answer', {
+			const res = await fetch('https://busi-mail-dojo.onrender.com/answer', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify(data)

@@ -9,14 +9,14 @@ const Mailedit = () => {
     useEffect(() => {
         const fetchQuestion = async () => {
             try {
-                const response = await fetch('http://localhost:3000/question');
+                const response = await fetch('https://busi-mail-dojo.onrender.com/question');
                 if (!response.ok) { throw new Error('Network response was not ok'); }
                 const data = await response.json();
                 if (data) { setQuestion(data); }
             } catch (error) {
                 console.error('Error fetching question:', error);
                 try {
-                    const response = await fetch('http://localhost:3000/question');
+                    const response = await fetch('https://busi-mail-dojo.onrender.com/question');
                     if (!response.ok) { throw new Error('Network response was not ok'); }
                     const data = await response.json();
                     if (data) { setQuestion(data); }
