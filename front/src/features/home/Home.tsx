@@ -1,4 +1,3 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import logo from '../../assets/24651_color.svg'
 import { IoMdTrendingUp } from "react-icons/io";

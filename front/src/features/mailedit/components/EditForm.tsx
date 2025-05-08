@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import EditTitle from './EditTitle'
 import EditBody from './EditBody'
 import { MdSend } from "react-icons/md";

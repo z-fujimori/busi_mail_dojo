@@ -1,4 +1,3 @@
-import React from 'react'
 import { useLocation } from 'react-router-dom'
 import { ReturnText } from './types/returnText';
 import Comparison from './components/Comparison';

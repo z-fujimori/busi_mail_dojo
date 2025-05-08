@@ -1,4 +1,3 @@
-import React from 'react'
 import PointCommentCard from './PointCommentCard'
 
 const PointComment = (props: {

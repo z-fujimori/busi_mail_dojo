@@ -1,4 +1,3 @@
-import React from 'react'
 import { ReturnText } from '../types/returnText'
 import ComparisonCard from './ComparisonCard'
 

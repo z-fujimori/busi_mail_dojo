@@ -1,4 +1,3 @@
-import React from 'react'
 import TypeQuestion from '../types/question';
 
 const Question = (

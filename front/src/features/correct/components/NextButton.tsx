@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdSend } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 

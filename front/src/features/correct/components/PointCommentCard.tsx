@@ -1,4 +1,3 @@
-import React from 'react'
 
 const PointCommentCard = (props: {
     commentTitle: string,
