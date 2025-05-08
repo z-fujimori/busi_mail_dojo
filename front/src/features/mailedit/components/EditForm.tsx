@@ -21,6 +21,7 @@ const EditForm = (props: {
 
 	const onSubmit = async (data: UserAnser) => {
 		setIsLoad(true)
+		console.log("送信データ", data)
 		try {
 			const res = await fetch('https://busi-mail-dojo.onrender.com/answer', {
 				method: 'POST',
