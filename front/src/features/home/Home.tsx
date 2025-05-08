@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-import logo from '../../assets/24651_color.svg'
 import { IoMdTrendingUp } from "react-icons/io";
 import { GiLightningTrio } from "react-icons/gi";
 import { RiQuillPenLine } from "react-icons/ri";
@@ -22,7 +21,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 max-w-3xl w-full px-4 hidden lg:block">
+        <div className="lg:grid grid-cols-3 gap-8 max-w-3xl w-full px-4 hidden">
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
             <div className="text-5xl mb-1 text-gray-500 flex justify-center"><RiQuillPenLine /></div>
             <h3 className="font-bold mb-2">実践的な練習</h3>
@@ -47,11 +46,6 @@ const Home = () => {
           onClick={() => navigate('/mailedit')}>
           練習を始める
         </button>
-      </div>
-
-      {/* フッター */}
-      <div className="flex justify-end p-4 hidden">
-        <img src={logo} alt="logo" className="h-12" />
       </div>
     </div>
   )
