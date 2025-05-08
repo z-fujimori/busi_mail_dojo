@@ -32,8 +32,12 @@ const Mailedit = () => {
 
     return (
         <div>
-            <Question question={question} />
-            <EditForm questionId={question?.id} />
+            {question && (
+                <>
+                    <Question question={question} />
+                    <EditForm questionId={question.id} />
+                </>
+            )}
         </div>
     )
 }
