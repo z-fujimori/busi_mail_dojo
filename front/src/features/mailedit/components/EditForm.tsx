@@ -52,9 +52,14 @@ const EditForm = (props: {
 		<div>
 			{isLoad && (
 				<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-					<div className="bg-white p-4 rounded-lg shadow-lg">
+					<div className="bg-gray-400 bg-opacity-50 p-8 rounded-lg shadow-lg">
 						<div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-900 mx-auto"></div>
-						<p className="text-center mt-4">処理中...</p>
+						<p className="text-center text-lg mt-4 text-gray-300">
+							問題取得中
+							<span className="animate-dot1">. </span>
+							<span className="animate-dot2">. </span>
+							<span className="animate-dot3">. </span>
+						</p>
 					</div>
 				</div>
 			)}
@@ -83,3 +88,39 @@ const EditForm = (props: {
 }
 
 export default EditForm
+
+const styles = `
+@keyframes dot1 {
+    0%, 0% { opacity: 0; }
+    30%, 80% { opacity: 1; }
+    90%, 100% { opacity: 0; }
+}
+
+@keyframes dot2 {
+    0%, 20% { opacity: 0; }
+    30%, 70% { opacity: 1; }
+    80%, 100% { opacity: 0; }
+}
+
+@keyframes dot3 {
+    0%, 30% { opacity: 0; }
+    40%, 60% { opacity: 1; }
+    70%, 100% { opacity: 0; }
+}
+
+.animate-dot1 {
+    animation: dot1 3s infinite;
+}
+
+.animate-dot2 {
+    animation: dot2 3s infinite;
+}
+
+.animate-dot3 {
+    animation: dot3 3s infinite;
+}
+`;
+
+const styleSheet = document.createElement("style");
+styleSheet.innerText = styles;
+document.head.appendChild(styleSheet);
