@@ -55,7 +55,7 @@ const EditForm = (props: {
 					<div className="bg-gray-400 bg-opacity-50 p-8 rounded-lg shadow-lg">
 						<div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-300 mx-auto"></div>
 						<p className="text-center text-lg mt-4 text-gray-300">
-							問題取得中
+							添削中
 							<span className="animate-dot1">. </span>
 							<span className="animate-dot2">. </span>
 							<span className="animate-dot3">. </span>
